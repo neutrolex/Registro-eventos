@@ -1,6 +1,5 @@
-from django.test import TestCase
 from django.urls import reverse
-from .models import Evento
+from .models import Event
 
 class TestEventoDeleteView(TestCase):
     def setUp(self):
