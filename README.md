@@ -5,8 +5,8 @@ Este proyecto es una aplicación web desarrollada con Django para la gestión ef
 **Integrantes:**
 - Christofer Salas - Scrum Master
 - Cesar Cabrejos - Product Owner  
-- Zaith Saenz - Developer  
-- Yordy Campo - Developer
+- Zaith Saenz - Developer 1 
+- Yordy Campo - Developer 2
 
 ---
 
