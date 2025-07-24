@@ -2,7 +2,9 @@
 
 Este proyecto es una aplicación web desarrollada con Django para la gestión eficiente de eventos. Permite a los usuarios realizar operaciones CRUD (Crear, Leer, Actualizar y Eliminar) sobre eventos, facilitando el registro, edición y eliminación de actividades programadas. El sistema está diseñado para ser intuitivo y seguro, asegurando la validación de datos y el control de acceso.
 
-**Integrantes:**  
+**Integrantes:**
+- Christofer Salas - Scrum Master
+- Cesar Cabrejos - Product Owner  
 - Zaith Saenz - Developer  
 - Yordy Campo - Developer
 
