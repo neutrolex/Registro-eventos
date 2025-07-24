@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Evento</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'registro/css/evento_form.css' %}">
+</head>
+<body>
+    <main class="form-container" role="form" aria-labelledby="titulo-form">
+        <h1 id="titulo-form">Formulario de Evento</h1>
+
+        <form method="POST" novalidate>
+            {% csrf_token %}
+            {{ form.as_p }}
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">Guardar</button>
+                <a href="{% url 'evento_list' %}" class="btn btn-secondary">Volver a la lista</a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

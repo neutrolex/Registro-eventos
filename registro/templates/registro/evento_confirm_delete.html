@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirmar eliminación</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'registro/css/evento_confirm_delete.css' %}">
+</head>
+<body>
+    <main class="confirm-container" role="dialog" aria-modal="true" aria-labelledby="titulo-eliminar">
+        <h1 id="titulo-eliminar">¿Estás seguro de eliminar <span class="evento-nombre">"{{ evento.nombre }}"</span>?</h1>
+        
+        <form method="POST" class="form-actions">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-danger">Sí, eliminar</button>
+            <a href="{% url 'evento_list' %}" class="btn btn-cancel">Cancelar</a>
+        </form>
+    </main>
+</body>
+</html>

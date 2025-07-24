@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Eventos</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'registro/css/evento_list.css' %}">
+</head>
+<body>
+    <main class="container">
+        <header class="header">
+            <h1>Lista de Eventos</h1>
+            <a href="{% url 'evento_create' %}" class="btn btn-primary">+ Crear nuevo evento</a>
+        </header>
+
+        <form method="GET" class="search-bar">
+            <input type="text" name="q" placeholder="Buscar por nombre..." value="{{ query }}" />
+            <button type="submit" class="btn btn-primary">Buscar</button>
+            <button type="submit" name="ordenar" value="asc" class="btn btn-primary">Ordenar por fecha ↑</button>
+        </form>
+
+        <ul class="event-list">
+            {% for evento in eventos %}
+                <li class="event-item">
+                    <div class="event-details">
+                        <h2 class="event-title">{{ evento.nombre }}</h2>
+                        <p><strong>Fecha:</strong> {{ evento.fecha }}</p>
+                        <p><strong>Ubicación:</strong> {{ evento.ubicacion }}</p>
+                        <p><strong>Organizador:</strong> {{ evento.organizador }}</p>
+                    </div>
+                    <div class="event-actions">
+                        <a href="{% url 'evento_update' evento.id %}" class="btn btn-edit">Editar</a>
+                        <a href="{% url 'evento_delete' evento.id %}" class="btn btn-delete">Eliminar</a>
+                    </div>
+                </li>
+            {% empty %}
+                <li class="event-item empty">No hay eventos disponibles.</li>
+            {% endfor %}
+        </ul>
+    </main>
+</body>
+</html>
