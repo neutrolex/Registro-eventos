@@ -7,6 +7,7 @@ Este proyecto es una aplicación web desarrollada con Django para la gestión ef
 - Cesar Cabrejos - Product Owner  
 - Zaith Saenz - Developer 1 
 - Yordy Campo - Developer 2
+- Anthony Ramos - Developer 3
 
 ---
 
