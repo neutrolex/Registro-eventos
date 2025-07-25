@@ -12,7 +12,7 @@ class TestEventoDeleteView(TestCase):
         )
 
     def test_eliminar_evento(self):
-        url = reverse('event_delete', args=[self.evento.id])
+        url = reverse('evento_delete', args=[self.evento.id])
         response = self.client.post(url)
         self.assertRedirects(response, reverse('evento_list'))
         
