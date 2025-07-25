@@ -3,9 +3,10 @@
 Este proyecto es una aplicación web desarrollada con Django para la gestión eficiente de eventos. Permite a los usuarios realizar operaciones CRUD (Crear, Leer, Actualizar y Eliminar) sobre eventos, facilitando el registro, edición y eliminación de actividades programadas. El sistema está diseñado para ser intuitivo y seguro, asegurando la validación de datos y el control de acceso.
 
 **Integrantes:**
+
 - Christofer Salas - Scrum Master
-- Cesar Cabrejos - Product Owner  
-- Zaith Saenz - Developer 1 
+- Cesar Cabrejos - Product Owner
+- Zaith Saenz - Developer 1
 - Yordy Campo - Developer 2
 - Anthony Ramos - Developer 3
 
@@ -62,6 +63,7 @@ Abre tu navegador y visita [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
 ---
 
+.
 🧾 Historia de Usuario: Registro de Eventos
 🏷️ Etiquetas:
 #eventos #registro #frontend #backend #formulario #CRUD
@@ -86,35 +88,35 @@ El sistema debe permitir ordenar los eventos por fecha.
 
 📋 Checklist de Tareas
 Frontend
- Crear formulario con inputs: nombre, fecha, ubicación, organizador.
+Crear formulario con inputs: nombre, fecha, ubicación, organizador.
 
- Validar que ningún campo esté vacío.
+Validar que ningún campo esté vacío.
 
- Validar que la fecha no sea anterior al día actual.
+Validar que la fecha no sea anterior al día actual.
 
- Mostrar mensajes de error en tiempo real.
+Mostrar mensajes de error en tiempo real.
 
- Implementar tabla o lista para visualizar eventos registrados.
+Implementar tabla o lista para visualizar eventos registrados.
 
- Agregar botones: Editar, Eliminar, y Registrar evento.
+Agregar botones: Editar, Eliminar, y Registrar evento.
 
- Implementar paginación y búsqueda por nombre o fecha.
+Implementar paginación y búsqueda por nombre o fecha.
 
- Mostrar notificación o alerta tras una operación exitosa (registro, edición, eliminación).
+Mostrar notificación o alerta tras una operación exitosa (registro, edición, eliminación).
 
 Backend
- Crear modelo Evento con campos: nombre, fecha, ubicacion, organizador.
+Crear modelo Evento con campos: nombre, fecha, ubicacion, organizador.
 
- Crear endpoints RESTful: GET, POST, PUT, DELETE para eventos.
+Crear endpoints RESTful: GET, POST, PUT, DELETE para eventos.
 
- Validar que la fecha del evento sea futura.
+Validar que la fecha del evento sea futura.
 
- Validar que todos los campos estén presentes y tengan formato correcto.
+Validar que todos los campos estén presentes y tengan formato correcto.
 
- Implementar lógica de paginación y filtros por fecha y nombre.
+Implementar lógica de paginación y filtros por fecha y nombre.
 
- Guardar eventos en base de datos.
+Guardar eventos en base de datos.
 
- Implementar control de errores y respuestas apropiadas (status codes).
+Implementar control de errores y respuestas apropiadas (status codes).
 
- Autenticar que solo usuarios autorizados puedan registrar o eliminar eventos.
+Autenticar que solo usuarios autorizados puedan registrar o eliminar eventos.
