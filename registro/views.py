@@ -63,4 +63,4 @@ def evento_delete(request, id):
     if request.method == 'POST':
         evento.delete()
         return redirect('evento_list')
-    return render(request, 'registro/event_confirm_delete.html', {'evento': evento})
+    return render(request, 'registro/evento_confirm_delete.html', {'evento': evento})
