@@ -62,3 +62,59 @@ Abre tu navegador y visita [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
 ---
 
+🧾 Historia de Usuario: Registro de Eventos
+🏷️ Etiquetas:
+#eventos #registro #frontend #backend #formulario #CRUD
+
+📝 Descripción:
+Como administrador del sistema, quiero registrar eventos con su fecha, ubicación y organizador, para llevar un control ordenado de las actividades programadas en el sistema.
+
+✅ Criterios Clave de Aceptación:
+El usuario puede crear, ver, editar y eliminar eventos.
+
+Los eventos deben incluir: nombre del evento, fecha, ubicación, y organizador.
+
+La fecha debe ser válida y futura (no fechas pasadas).
+
+Todos los campos son obligatorios.
+
+El sistema debe validar datos en frontend y backend.
+
+Los eventos deben mostrarse en una tabla o listado con opción de búsqueda.
+
+El sistema debe permitir ordenar los eventos por fecha.
+
+📋 Checklist de Tareas
+Frontend
+ Crear formulario con inputs: nombre, fecha, ubicación, organizador.
+
+ Validar que ningún campo esté vacío.
+
+ Validar que la fecha no sea anterior al día actual.
+
+ Mostrar mensajes de error en tiempo real.
+
+ Implementar tabla o lista para visualizar eventos registrados.
+
+ Agregar botones: Editar, Eliminar, y Registrar evento.
+
+ Implementar paginación y búsqueda por nombre o fecha.
+
+ Mostrar notificación o alerta tras una operación exitosa (registro, edición, eliminación).
+
+Backend
+ Crear modelo Evento con campos: nombre, fecha, ubicacion, organizador.
+
+ Crear endpoints RESTful: GET, POST, PUT, DELETE para eventos.
+
+ Validar que la fecha del evento sea futura.
+
+ Validar que todos los campos estén presentes y tengan formato correcto.
+
+ Implementar lógica de paginación y filtros por fecha y nombre.
+
+ Guardar eventos en base de datos.
+
+ Implementar control de errores y respuestas apropiadas (status codes).
+
+ Autenticar que solo usuarios autorizados puedan registrar o eliminar eventos.
